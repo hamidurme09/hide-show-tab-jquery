@@ -9,9 +9,12 @@ $(document).ready(function() {
     $(".mch-content .mch-content__item").hide();
     $(".mch-content .mch-content__item:first-child").show();
 
-    $(".mch-nav ul li").click(function() {
-      $(".mch-nav ul li").removeClass("active");
+    $("#mch-nav .mch-nav__iconbox").click(function() {
+      $("#mch-nav .mch-nav__iconbox").removeClass("active");
       $(this).addClass("active");
+
+      $("#mch-nav .mch-nav__icon").removeClass("active");
+      $(this).children().addClass("active");
 
       var current_tab_value = $(this).attr("data-list");
       $(".mch-content .mch-content__item").hide();
@@ -56,4 +59,19 @@ $(document).ready(function() {
       $("." + current_tab_value).show();
     });
   }
+
+  // $('#owl-carousel').owlCarousel();
+  $("#mch-content-2__carousel").owlCarousel({
+    items: 1,
+    autoplay: true,
+    smartSpeed: 700,
+    loop: true,
+    autoplayHoverPause: true,
+    nav: true,
+    dots: false,
+  });
 });
+
+$(function() {
+
+})
