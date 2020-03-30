@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: rgb(240, 160, 160);
+}
+
+.mch-container {
+  margin: 30px auto;
+  height: 550px;
+  width: 300px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.mch-wrapper {
+  background-color: brown;
+  height: 100%;
+}
+
+.mch-wrapper .mch-content {
+  height: 90%;
+  background-color: burlywood;
+}
+
+.mch-container nav ul {
+  display: flex;
+  justify-content: space-between;
+  height: 10%;
+}
+
+
+
+.mch-container nav ul li {
+  list-style: none;
+  background-color: aqua;
+  padding: 10px;
+  /* width: 20%; */
+}
+
+.mch-container nav ul li.active {
+  border: 5px solid black;
+}
+
+
+/* =============================
+      mch-content-3
+============================= */
+
+#mch-content-3 ul {
+  display: flex;
+  justify-content: space-between;
+  height: 10%;
+}
+
+
+
+#mch-content-3 ul li {
+  list-style: none;
+  background-color: aqua;
+  padding: 10px;
+  /* width: 20%; */
+}
+
+#mch-content-3 ul li.active {
+  border: 5px solid black;
+}
+
+
+/* =============================
+      mch-content-4
+============================= */
+
+#mch-content-4 ul {
+  display: flex;
+  justify-content: space-between;
+  height: 10%;
+}
+
+#mch-content-4 ul li {
+  list-style: none;
+  background-color: aqua;
+  padding: 10px;
+  /* width: 20%; */
+}
+
+#mch-content-4 ul li.active {
+  border: 5px solid black;
+}
