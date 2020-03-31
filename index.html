@@ -16,70 +16,60 @@
         <div class="mch-content">
           <!-- bell tab-1 start  -->
           <div class="mch-content__item mch-nav-1" id="mch-content-1">
-            <header class="mch-content-1__header">
-              <div>
-                <img class="mch-content-1__header__logo" src="./images/logo-mocchi.png" alt="logo-mocchi" />
-                <img class="mch-content-1__header__close" src="./images/close.png" alt="close-icon" />
-              </div>
-              <h2>American Express</h2>
-              <p>Earn With Friends Using Amex</p>
-            </header>
-
-            <div class="mch-content-1__body">
-              <div class="mch-content-1__body__list">
-                <img
-                  class="mch-content-1__body__list--imageleft"
-                  src="./images/trend-list/app-bg-lines-copy.png"
-                  alt="image-left"
-                />
-                <span>Gusto</span>
-                <a href="#">Activate</a>
-              </div>
-              <div class="mch-content-1__body__list">
-                <img
-                  class="mch-content-1__body__list--imageleft"
-                  src="./images/trend-list/app-bg-lines-copy.png"
-                  alt="image-left"
-                />
-                <span>Gusto</span>
-                <a href="#">Activate</a>
-              </div>
-              <div class="mch-content-1__body__list">
-                <img
-                  class="mch-content-1__body__list--imageleft"
-                  src="./images/trend-list/app-bg-lines-copy.png"
-                  alt="image-left"
-                />
-                <span>Gusto</span>
-                <a href="#">Activate</a>
-              </div>
-
-              <div class="mch-content-1__body__btn">
-                <button>All Referrals</button>
-              </div>
-
-              
-              
-              <!-- <div class="tab-1-choose-body">
-                <div class="tab-1-choose-list">
+            <div class="mch-content-1__wrapper">
+              <header class="mch-content-1__header">
+                <div>
+                  <img class="mch-content-1__header__logo" src="./images/logo-mocchi.png" alt="logo-mocchi" />
+                  <img class="mch-content-1__header__close" src="./images/close.png" alt="close-icon" />
+                </div>
+                <h2>American Express</h2>
+                <p>Earn With Friends Using Amex</p>
+              </header>
+  
+              <div class="mch-content-1__body">
+                <div class="mch-content-1__body__list">
                   <img
-                    class="tab-1-choose-list__image-left"
+                    class="mch-content-1__body__list--imageleft"
                     src="./images/trend-list/app-bg-lines-copy.png"
                     alt="image-left"
                   />
-                  <div class="tab-1-choose-list__description">
-                    <h4>Gusto</h4>
-                  </div>
-                  <a href="#" class="tab-1-choose-list__activate" data-choose-tab-1-activate="1">Activate</a>
+                  <span>Gusto</span>
+                  <a class="mch-content-1__body__list--activate" href="#" data-list="mch-bellIcon-activate">Activate</a>
                 </div>
 
-                <div class="tab-1-choose-body__btn">
+  
+                <div class="mch-content-1__body__btn">
                   <button>All Referrals</button>
                 </div>
-              </div> -->
-
-
+  
+              </div>
             </div>
+            <div class="mch-content__item__activatereferral mch-bellIcon-activate" >
+              <header class="mch-content-1__header">
+                <div>
+                  <img class="mch-content-1__header__logo" src="./images/logo-mocchi.png" alt="logo-mocchi" />
+                  <img class="mch-content-1__header__close" src="./images/close.png" alt="close-icon" />
+                </div>
+                <h2>American Express</h2>
+                <p>Earn With Friends Using Amex</p>
+              </header>
+              <div class="mch-content__item__activatereferral--body">
+                <h4>You’ve activated Emma’s referral!</h4>
+                <div>
+                  <img  class="mch-content__item__activatereferral--ellipse" src="./images/referrals/Ellipse 41.png" alt="Ellipse">
+                </div>
+                <div >
+                  <img class="mch-content__item__activatereferral--dollar" src="./images/referrals/dollar-sign.png" alt="Ellipse">
+                </div>
+                <div>
+                  <img class="mch-content__item__activatereferral--left" src="./images/referrals/image-left-3.png" alt="image-left">
+                </div>
+                <div>
+                  <img class="mch-content__item__activatereferral--right" src="./images/referrals/image-right-3.png" alt="image-right">
+                </div>
+              </div>
+            </div>
+
           </div>
           <!-- bell tab-1 end  -->
 
@@ -361,7 +351,7 @@
                 <img class="mch-content-3__header__close" src="./images/close-dark.png" alt="close-icon" />
                 <div class="mch-content-3__nav">
                   <ul>
-                    <li data-list="mch-referrals">
+                    <li class="active" data-list="mch-referrals">
                       Referrals
                     </li>
                     <li data-list="mch-profile">
@@ -371,51 +361,93 @@
                 </div>
             </header>
 
-            <div class="mch-content-3__wrapper">
               <div class="mch-content-3__content">
+                
                 <div class="mch-content-3__content__item mch-referrals">
-                  <h1>my Referrals</h1>
+                  <div class="mch-content-3__content__item__header">
+                    <h4>Active Referrals</h4>
+                  </div>
+                  <div class="mch-content-3__content__list">
+                    <img
+                      class="mch-content-3__content__list--imageleft"
+                      src="./images/trend-list/app-bg-lines-copy.png"
+                      alt="image-left"
+                    />
+                    <span>Gusto</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#979EAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
                 </div>
                 <div class="mch-content-3__content__item mch-profile">
-                  <h1>my profile</h1>
+                  <div class="mch-content-3__content__item--profile">
+                    <form>
+                      <input type="text" id="fname" name="firstname" placeholder="First Name">
+                      <input type="text" id="lname" name="lastname" placeholder="Last Name">    
+                      <input type="email" id="email" name="email" placeholder="Emai Address">    
+                      <input type="submit" value="Submit">
+                    </form>
+                  </div>
                 </div>
+                
               </div>
-            </div>
           </div>
           <!-- user tab-3 end  -->
 
           <!-- contact tab-4 start  -->
           <div class="mch-content__item mch-nav-4" id="mch-content-4">
-            <div class="mch-content-4__header">
-              <h4>header</h4>
+            <header class="mch-content-4__header">
+              <img class="mch-content-4__header__logo" src="./images/logo-mocchi-green.png" alt="logo-mocchi" />
+              <img class="mch-content-4__header__close" src="./images/close-dark.png" alt="close-icon" />
               <div class="mch-content-4__nav">
                 <ul>
-                  <li data-list="mch-contact">
+                  <li class="active" data-list="mch-contact">
                     My contact
                   </li>
                   <li data-list="mch-suggetions">
-                    My mch-suggetions
+                    My Suggetions
                   </li>
                 </ul>
               </div>
-            </div>
+            </header>
 
-            <div class="mch-content-4__wrapper">
               <div class="mch-content-4__content">
                 <div class="mch-content-4__content__item mch-contact">
-                  <h1>My contact</h1>
+                  <div class="mch-content-4__content__list">
+                    <img
+                      class="mch-content-4__content__list--imageleft"
+                      src="./images/trend-list/app-bg-lines-copy.png"
+                      alt="image-left"
+                    />
+                    <span>Gusto</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#979EAC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  
                 </div>
                 <div class="mch-content-4__content__item mch-suggetions">
-                  <h1>My mch-suggetions</h1>
+                  <div class="mch-content-4__content__list">
+                    <img
+                      class="mch-content-4__content__list--imageleft"
+                      src="./images/trend-list/app-bg-lines-copy.png"
+                      alt="image-left"
+                    />
+                    <span>Gusto</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M12 8V16M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#267DFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+            
                 </div>
               </div>
-            </div>
+
           </div>
           <!-- contact tab-4 end  -->
         </div>
 
         <nav id="mch-nav">
-          <div class="mch-nav__iconbox active" data-list="mch-nav-1">
+          <div class="mch-nav__iconbox active" id="mch-bellIcon" data-list="mch-nav-1">
               <svg
                 class="mch-nav__icon active"
                 width="24"
@@ -523,121 +555,8 @@
                 </g>
               </svg>
             </div>
-          </div>
         </nav>
 
-        <!-- <nav id="mch-nav">
-          <ul>
-            <li class="active" data-list="mch-nav-1">
-              <svg
-                class="mch-nav__icon active"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g>
-                  <path
-                    d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M13.73 21C13.5542 21.3031 13.3018 21.5547 12.9982 21.7295C12.6946 21.9044 12.3504 21.9965 12 21.9965C11.6496 21.9965 11.3054 21.9044 11.0018 21.7295C10.6981 21.5547 10.4458 21.3031 10.27 21"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </g>
-              </svg>
-            </li>
-            <li data-list="mch-nav-2">
-              <svg
-                class="mch-nav__icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g>
-                  <path
-                    d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M3 6H21"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </g>
-              </svg>
-            </li>
-            <li data-list="mch-nav-3">
-              <svg
-                class="mch-nav__icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g>
-                  <path
-                    d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </g>
-              </svg>
-            </li>
-            <li data-list="mch-nav-4">
-              <svg
-                class="mch-nav__icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g>
-                  <path
-                    d="M17 20V18C17 16.9391 16.7366 15.9217 16.2678 15.1716C15.7989 14.4214 15.163 14 14.5 14H9.5C8.83696 14 8.20107 14.4214 7.73223 15.1716C7.26339 15.9217 7 16.9391 7 18V20M23 18V16C23 14.9391 22.7893 13.9217 22.4142 13.1716C22.0391 12.4214 21.5304 12 21 12H19M1 18V16C1 14.9391 1.21071 13.9217 1.58579 13.1716C1.96086 12.4214 2.46957 12 3 12H5M5 9C3.89543 9 3 8.10457 3 7C3 5.89543 3.89543 5 5 5M19 9C20.1046 9 21 8.10457 21 7C21 5.89543 20.1046 5 19 5M15 7C15 8.65685 13.6569 10 12 10C10.3431 10 9 8.65685 9 7C9 5.34315 10.3431 4 12 4C13.6569 4 15 5.34315 15 7Z"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </g>
-              </svg>
-            </li>
-          </ul>
-        </nav> -->
       </div>
     </div>
 

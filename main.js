@@ -1,8 +1,11 @@
 $(document).ready(function() {
   console.log("ready");
   navIcon();
+  bellnavIcon();
   userNavIcon();
   contactNavIcon();
+  shopingCarousel();
+  bellActivate();
 
   function navIcon() {
     // by default hide all content div elements except first element
@@ -14,12 +17,21 @@ $(document).ready(function() {
       $(this).addClass("active");
 
       $("#mch-nav .mch-nav__icon").removeClass("active");
-      $(this).children().addClass("active");
+      $(this)
+        .children()
+        .addClass("active");
 
       var current_tab_value = $(this).attr("data-list");
       $(".mch-content .mch-content__item").hide();
       $("." + current_tab_value).show();
     });
+  }
+
+  function bellnavIcon() {
+    $("#mch-bellIcon").click(function() {
+      $(".mch-content-1__wrapper").show();
+      $('.mch-content__item__activatereferral').hide()
+    })
   }
 
   function userNavIcon() {
@@ -61,17 +73,23 @@ $(document).ready(function() {
   }
 
   // $('#owl-carousel').owlCarousel();
-  $("#mch-content-2__carousel").owlCarousel({
-    items: 1,
-    autoplay: true,
-    smartSpeed: 700,
-    loop: true,
-    autoplayHoverPause: true,
-    nav: true,
-    dots: false,
-  });
+  function shopingCarousel() {
+    $("#mch-content-2__carousel").owlCarousel({
+      items: 1,
+      autoplay: true,
+      smartSpeed: 700,
+      loop: true,
+      autoplayHoverPause: true,
+      nav: true,
+      dots: false
+    });
+  }
+
+  function bellActivate() {
+    $(".mch-content-1__body__list--activate").click(function() {
+      $(".mch-content-1__wrapper").hide();
+      var current_tab_value = $(this).attr("data-list");
+      $("." + current_tab_value).show();
+    });
+  }
 });
-
-$(function() {
-
-})

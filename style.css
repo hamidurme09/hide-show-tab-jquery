@@ -122,16 +122,16 @@ body {
   flex: 1;
 }
 
-.mch-content-1__body__list--description a:link,
-.mch-content-1__body__list--description a:visited {
+.mch-content-1__body__list a:link,
+.mch-content-1__body__list a:visited {
   color: var(--main-color);
   text-decoration: none;
   font-weight: 700;
   font-size: 12px;
 }
 
-.mch-content-1__body__list--description a:hover,
-.mch-content-1__body__list--description a:active {
+.mch-content-1__body__list a:hover,
+.mch-content-1__body__list a:active {
   opacity: 0.8;
 }
 
@@ -156,6 +156,62 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: all .2s ease;
+}
+
+.mch-content__item__activatereferral {
+  height: 90%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.mch-content__item__activatereferral--body {
+height: calc(100% - 140px);
+position: relative;
+padding: 20px;
+}
+
+.mch-content__item__activatereferral--body h4 {
+  font-size: 16px;
+  padding-top: 50px;
+  text-align: center;
+  color: var(--text-main);
+}
+
+.mch-content__item__activatereferral--ellipse {
+  height: 120px;
+  width: 140px;
+  position: absolute;
+  left: 80px;
+  top: 125px;
+}
+
+.mch-content__item__activatereferral--dollar {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  left: 135px;
+  top: 170px;
+}
+
+.mch-content__item__activatereferral--left {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  right: 60px;
+  top: 160px;
+
+}
+
+.mch-content__item__activatereferral--right {
+  position: absolute;
+  height: 45px;
+  width: 45px;
+  left: 60px;
+  top: 160px;
+
 }
 
 
@@ -360,7 +416,7 @@ body {
 .mch-content-3__nav {
   position: absolute;
   left: 0px;
-  bottom: 0px;
+  bottom: -15px;
   width: 100%;
 }
 
@@ -390,25 +446,219 @@ color: var(--main-color);
   color: var(--main-color);
 }
 
+.mch-content-3__content {
+  height: calc(100% - 125px);
+  padding: 5px 15px;
+  overflow-y: auto;
+}
+
+.mch-content-3__content::-webkit-scrollbar {
+  display: none;
+}
+
+.mch-content-3__content__item__header {
+  margin: -5px -15px;
+  background-image: linear-gradient(
+    rgba(39, 167, 98, 0.9),
+    rgba(39, 167, 98, 0.9)
+  ),
+  url(./images/Vector.png);
+  height: 90px;
+  color: var(--white);
+  text-align: center;
+  padding: 35px;
+  margin-bottom: 10px;
+
+}
+
+.mch-content-3__content__list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  transition: all .2s;
+}
+
+.mch-content-3__content__list:hover {
+  transform: translateY(-3px);
+  background-color: rgba(204, 204, 204, 0.9);
+  box-shadow: 10px 10px 8px #888888;
+
+}
+
+.mch-content-3__content__list--imageleft {
+  margin-right: 10px;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+
+.mch-content-3__content__list span {
+  flex: 1;
+}
+
+.mch-content-3__content__list a:link,
+.mch-content-3__body__list a:visited {
+  color: var(--main-color);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.mch-content-3__content__list a:hover,
+.mch-content-3__content__list a:active {
+  opacity: 0.8;
+}
+
+
+.mch-content-3__content__item--profile input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  display: inline-block;
+  box-sizing: border-box;
+  outline: none;
+  transition: all .3s;
+
+}
+
+.mch-content-3__content__item--profile input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+  margin: 8px 0;
+  display: inline-block;
+  box-sizing: border-box;
+  outline: none;
+  transition: all .3s;
+}
+
+.mch-content-3__content__item--profile input[type=text]:focus,
+.mch-content-3__content__item--profile input[type=email]:focus {
+  border: 1px solid var(--secondary-desabled);
+  border-radius: 4px;
+}
+
+
+.mch-content-3__content__item--profile input[type=submit] {
+  width: 100%;
+  background-color: var(--main-green);
+  color: white;
+  padding: 14px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.mch-content-3__content__item--profile input[type=submit]:hover {
+  background-color: var(--main-green);
+  opacity: .8;
+}
+
 /* =============================
       mch-content-4
 ============================= */
 
-#mch-content-4 ul {
+#mch-content-4 {
+  height: 100%;
+}
+
+.mch-content-4__header {
+  height: 125px;
+  position: relative;
+}
+
+.mch-content-4__header__logo {
+  position: absolute;
+  left: 5px;
+  top: 20px;
+}
+
+.mch-content-4__header__close {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  right: 15px;
+  top: 20px;
+}
+
+.mch-content-4__nav {
+  position: absolute;
+  left: 0px;
+  bottom: -15px;
+  width: 100%;
+}
+
+
+.mch-content-4__nav ul {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  height: 10%;
-}
-
-#mch-content-4 ul li {
   list-style: none;
-  background-color: aqua;
-  padding: 10px;
-  /* width: 20%; */
 }
 
-#mch-content-4 ul li.active {
-  border: 5px solid black;
+.mch-content-4__nav ul li {
+  color: var(--secondary-desabled);
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  border-bottom: 3px solid var(--secondary-desabled);
+}
+
+.mch-content-4__nav ul li:hover {
+  color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+  }
+
+  #mch-content-4 .mch-content-4__nav ul li.active {
+    border-bottom: 3px solid var(--main-color);
+    color: var(--main-color);
+  }
+
+  .mch-content-4__content {
+    height: calc(100% - 125px);
+    padding: 5px 15px;
+    overflow-y: auto;
+  }
+
+  .mch-content-4__content::-webkit-scrollbar {
+    display: none;
+  }
+
+  
+.mch-content-4__content__list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  padding: 10px;
+  transition: all .2s;
+}
+
+.mch-content-4__content__list:hover {
+  transform: translateY(-3px);
+  background-color: rgba(204, 204, 204, 0.9);
+  box-shadow: 10px 10px 8px #888888;
+
+}
+
+.mch-content-4__content__list--imageleft {
+  margin-right: 10px;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+}
+
+.mch-content-4__content__list span {
+  flex: 1;
+}
+
+.mch-content-4__content__list svg:hover {
+  cursor: pointer;
 }
 
 /* ============================
